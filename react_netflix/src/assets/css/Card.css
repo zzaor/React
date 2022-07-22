@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Baemin_DH';
+    src: url('../fonts/배달의민족_도현.woff') format('woff');
+}
+
+#thorImg { background-image: url('../images/thor_love_and_thunder.jpg'); }
+#topGunImg { background-image: url('../images/top_gun.jpg'); }
+#minionsImg { background-image: url('../images/미니언즈.jpg'); }
+#breakUpImg { background-image: url('../images/헤어질결심.jpg'); }
+#witchImg { background-image: url('../images/마녀.jpg'); }
+
+section {
+    width: 20%;
+    height:30vh;
+    /* background: indianred; */
+    position: relative;
+    perspective: 600px; /* 원근감 느낌을 줄 수 있음*/
+    display: inline-block
+}
+
+.card {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    height:400px;
+    width: 300px;
+    transition:all 0.5s;
+    transform-style: preserve-3d; /*3차원 공간이 만들어져야 호버했을 떄 뒤의 이미지를 보이게 할 수 있다*/
+    border-radius: 0px;
+    border: 0;
+    backface-visibility: hidden; /*뒤집혔을떄의 각자의 기존 뒷면이 안보이도록 처리 */
+}
+
+.card:hover {
+    transform: translate(-50%,-50%) rotateY(180deg); /*호버했을 떄 카드 자체를 돌려준다.*/
+}
+
+.card > div {
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.card .front {
+    background: rgb(107, 107, 107);
+    z-index: 9999;
+    background-size: cover;
+    /* backface-visibility: visible; */
+}
+
+.card .back {
+    background: rgba(68, 68, 68, 0.5);
+    transform:rotateY(180deg); /* 기본 셋팅으로 돌려놔야 한다.*/
+    font-family: 'Baemin_DH';
+    /* backface-visibility: visible;  */
+    display: block;
+    padding-top: 50%;
+}
+
+.back > p {
+    margin-left: 3%;
+}
+
+
+.movieTitle {    
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+
+
+
+/********************************************************/
+.container{
+    transform-style: preserve-3d;
+    margin:0;
+}
+
+.container .box{
+    position: relative;
+    width: 20%;
+    height: 30vh;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.container .box .body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease;
+}
+
+
+
+.container .box .body .imgContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.container .box .body .imgContainer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .body .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.container .box:hover .body{
+    transform: rotateY(180deg);
+}
+
+.container .box .body .content div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #FE0061,#FFEB3B);
+    transform: translateZ(100px);
+}
+
+.container .box .body .content div h3{
+    letter-spacing: 1px;
+}

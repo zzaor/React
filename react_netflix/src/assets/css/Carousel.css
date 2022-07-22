@@ -1,0 +1,89 @@
+#carouselDiv {
+    height: 1100px;
+}
+
+.carousel {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+ 
+.carousel-item > img {
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(63, 63, 63) 35%);
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 65%;
+    left: 3%;
+    bottom: 35rem;
+    text-align: left;
+    display:inline-block;
+}
+
+.strangerCaption {
+    bottom: 25rem;
+}
+
+.smallLogo {
+    width: 45px;
+    display: inline-block;
+}
+
+.logoSpan {
+    vertical-align: middle;
+    
+}
+
+.movieName {
+    font-size: 100px;
+    font-family: 'Do Hyeon', sans-serif;
+    line-height: 95%;
+}
+
+.btn {
+    font-size: 20px;
+}
+
+.btnPlay {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.btnInfo {
+    width: 160px;
+}
+
+.btnPlay i , .btnInfo i {
+    margin-right: 5px;
+}
+
+#strangerThings {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.topIcon {
+    width: 45px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#topPara {
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+#topInfo {
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 6px;
+    font-size: 22px;
+}
+
+.buttons {
+    margin-top: 30px;
+}

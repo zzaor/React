@@ -1,0 +1,82 @@
+#header {
+    display: inline-block;
+    height: 70px;
+    width: 100%;
+}
+
+#header img, #header span {
+    cursor: pointer;
+}
+
+.logoImg {
+    width: 150px;
+    vertical-align: middle;
+    margin: 10px;
+    height: 60%;
+}
+
+#headerMenu{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.category {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.category span {
+    margin-left: 40px;
+}
+
+.category span:hover {
+    font-weight: 1000;
+}
+
+.userInfo {
+    float: right;
+    width: 30%;
+    text-align: right;
+    padding-top: 0.7%;
+}
+
+.userInfo img, .userInfo span {
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+.userInfo span {
+    font-size: 20px;
+}
+
+.userInfo span:hover {
+    font-weight: 1000;
+}
+
+.moreIcon {
+    vertical-align: middle;
+    width: 3%;
+}
+
+.userIcon {
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 10%;
+}
+
+.alertIcon {
+    vertical-align: middle;
+}
+
+.searchIcon {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.searchInput {
+    background-color: black;
+    border : 0;
+    border-bottom: solid 4px #e50914;
+}

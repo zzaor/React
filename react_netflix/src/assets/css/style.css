@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'SCDream4';
+    src: url('./font/SCDream4.otf');
+}
+
+body {
+    font-family: 'SCDream4';
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,67 @@
+.slick-slider {
+    height: 300px;
+}
+
+#contentsMain {
+    width: 90%;
+    margin: 2% auto;
+    
+}
+
+#contentsMain > h2 {
+    margin-bottom: 2%;
+}
+
+#thor           {   background-image: url('../images/thor_poster.jpg');  }
+#paperHouse     {   background-image: url('../images/종이의집.jpg');  }
+#dune           {   background-image: url('../images/dune.jpg');  }
+#floridaProject {   background-image: url('../images/florida_project.jpg');  }
+#yeongwoo       {   background-image: url('../images/우영우.jpg');  }
+#parasite       {   background-image: url('../images/기생충.jpg');  }
+#nineteen       {   background-image: url('../images/1917.jpg');  }
+#doctors        {   background-image: url('../images/doctor.jpg');  }
+#startUp        {   background-image: url('../images/startUp.jpg');  }
+#bando          {   background-image: url('../images/반도.jpg')  };
+
+.smallLogoImg {
+    float: left;
+    width: 50px;
+    height: 20px;
+}
+
+.movieImg {
+    width: 98%;
+    height: 265px;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    background-position: center;
+}
+
+.moviePara {
+    display:none;
+    /* background-color: rgba(151, 149, 153, 0.5); */
+    width: 98%;
+    height: 265px;
+    position: relative;
+    bottom: 265px;
+}
+
+
+
+.progress {
+    height: 5px;
+    width: 80%;
+    margin: 2.5% auto;
+    background-color: #5b5b5b;
+    border-radius: 0;
+    /* position: relative;
+    bottom: 255px; */
+}
+
+
+
+.w25 {  width: 25%;  }
+.w50 {  width: 50%;  }
+.w75 {  width: 75%;  }
+
